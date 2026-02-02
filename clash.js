@@ -448,7 +448,7 @@ const serviceConfigs = [
     key: 'pixiv',
     name: 'Pixiv',
     icon: 'https://play-lh.googleusercontent.com/8pFuLOHF62ADcN0ISUAyEueA5G8IF49mX_6Az6pQNtokNVHxIVbS1L2NM62H-k02rLM=w240-h480-rw',
-    url: 'http://spclient.wg.spotify.com/signup/public/v1/account',
+    url: 'https://spclient.wg.spotify.com/signup/public/v1/account',
     rules: ['GEOSITE,pixiv,Pixiv'],
   },
   {
