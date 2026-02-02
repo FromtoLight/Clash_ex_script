@@ -45,7 +45,7 @@ const args =
         directDNS: _directDNS,
         chinaDNS: _chinaDNS,
         foreignDNS: _foreignDNS,
-        mode: 'fastest',
+        mode: 'fast',
         ipv6: false,
         logLevel: 'error',
       }
@@ -64,7 +64,7 @@ let {
   directDNS = _directDNS,
   chinaDNS = _chinaDNS,
   foreignDNS = _foreignDNS,
-  mode = 'fastest',
+  mode = 'fast',
   ipv6 = false,
   logLevel = 'error',
 } = args
@@ -274,7 +274,7 @@ const dnsConfig = {
   'prefer-h3': false,
   'use-hosts': false,
   'use-system-hosts': false,
-  'respect-rules': false,
+  // 'respect-rules': false,
   'enhanced-mode': 'fake-ip',
   'fake-ip-range': '198.18.0.0/16',
   "fake-ip-filter-mode": "blacklist",
@@ -298,20 +298,19 @@ const dnsConfig = {
   'default-nameserver': defaultDNS,
   'direct-nameserver': directDNS,
   fallback: foreignDNS,
-  "fallback-filter": {
-      geoip: true,
-      "geoip-code": "CN",
-      geosite: ["gfw"],
-      ipcidr: ["240.0.0.0/4"],
-      domain: ["+.google.com", "+.facebook.com", "+.youtube.com"],
-    },
+  // "fallback-filter": {
+  //     geoip: true,
+  //     "geoip-code": "CN",
+  //     geosite: ["gfw"],
+  //     ipcidr: ["240.0.0.0/4"],
+  //     domain: ["+.google.com", "+.facebook.com", "+.youtube.com"],
+  //   },
   'proxy-server-nameserver': chinaDNS,
   'nameserver-policy': {
     'geosite:private': directDNS,
     'geosite:tld-cn,cn,steam@cn,category-games@cn,microsoft@cn,apple@cn,category-game-platforms-download@cn,category-public-tracker':
       chinaDNS,
-    'geosite:gfw,jetbrains-ai,category-ai-!cn,category-ai-chat-!cn,geolocation-!cn': foreignDNS,
-    'geosite:telegram': foreignDNS,
+    'geosite:gfw,geolocation-!cn,jetbrains-ai,category-ai-!cn,category-ai-chat-!cn,telegram': foreignDNS,
   },
 }
 
