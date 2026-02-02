@@ -274,7 +274,7 @@ const dnsConfig = {
   'prefer-h3': false,
   'use-hosts': false,
   'use-system-hosts': false,
-  // 'respect-rules': true,
+  'respect-rules': false,
   'enhanced-mode': 'fake-ip',
   'fake-ip-range': '198.18.0.0/16',
   "fake-ip-filter-mode": "blacklist",
@@ -307,10 +307,10 @@ const dnsConfig = {
     },
   'proxy-server-nameserver': chinaDNS,
   'nameserver-policy': {
-    'geosite:private': 'system',
+    'geosite:private': directDNS,
     'geosite:tld-cn,cn,steam@cn,category-games@cn,microsoft@cn,apple@cn,category-game-platforms-download@cn,category-public-tracker':
       chinaDNS,
-    'geosite:gfw,jetbrains-ai,category-ai-!cn,category-ai-chat-!cn': foreignDNS,
+    'geosite:gfw,jetbrains-ai,category-ai-!cn,category-ai-chat-!cn,geolocation-!cn': foreignDNS,
     'geosite:telegram': foreignDNS,
   },
 }
