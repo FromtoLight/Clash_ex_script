@@ -197,7 +197,7 @@ let ruleOptions = {
   pixiv: false,
   hbo: false,
   mediaHMT: false,
-  biliintl: false,
+  bilibili: false,
   tvb: false,
   hulu: false,
   primevideo: false,
@@ -600,11 +600,11 @@ const serviceConfigs = [
     ],
   },
   {
-    key: 'biliintl',
-    name: '哔哩哔哩东南亚',
+    key: 'bilibili',
+    name: '哔哩哔哩',
     icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png',
     url: 'http://www.gstatic.com/generate_204',
-    rules: ['GEOSITE,biliintl,哔哩哔哩东南亚'],
+    rules: ['GEOSITE,bilibili,哔哩哔哩'],
   },
   {
     key: 'bahamut',
