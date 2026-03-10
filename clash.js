@@ -229,6 +229,7 @@ const rules = [
   'PROCESS-NAME-REGEX,(?i).*NodeBaby.*,直连',
   'PROCESS-NAME-REGEX,(?i).*Node Baby.*,直连',
   'PROCESS-NAME-REGEX,(?i).*nblink.*,直连',
+  'PROCESS-NAME-REGEX,(?i).*owjdxb.*,直连',
   'PROCESS-NAME-REGEX,(?i).*vpn.*,直连',
   'PROCESS-NAME-REGEX,(?i).*vnc.*,直连',
   'PROCESS-NAME-REGEX,(?i).*tvnserver.*,直连',
